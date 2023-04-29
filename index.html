@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            AI Object Finder
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="backgroun.jpg">
+        <center style="color: white;">
+            <h1 class="btn btn-info heading">
+                AI Object Detection Web Application
+            </h1>
+            <br>
+            <br>
+            <p><b style="color: red;">NOTE* </b>To use this Web Application You need to type the object you want to detect in the space given below and then the website will tell you if the objects is detected in the web cam or not.</p>
+            <input id="object_name" type="input" placeholder="Type the name of the Object that is to be detected here" class="btn btn-warning"> 
+            <br>
+            <br>
+            <button onclick="start()" class="btn btn-success" id="start">START</button>
+            <br>
+            <br>
+            <h3 id="status_detect" class="btn btn-danger"></h3>
+            <h3 id="status_found" class="btn btn-danger"> </h3>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>

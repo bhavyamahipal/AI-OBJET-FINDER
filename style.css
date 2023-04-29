@@ -1,0 +1,13 @@
+body{
+    background-size: cover;
+}
+
+input{
+    width: 75%;
+}
+
+canvas{
+    border: 2.5px solid ghostwhite;
+    box-shadow: 5px 5px 5px ghostwhite;
+    margin-top: 130px;
+}
